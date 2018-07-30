@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="../css/request.css">
+	<script src="../js/validate.sela.js"></script>
 
 </head>
 <body>
@@ -62,19 +63,20 @@
 			<a id="make_request">
 				<h3 class="text-center">Request Pickup</h3>
 				<p>Please fill out all sections of this form to send your request</p>
-				<form>
+
+				<form action="#" name="myForm" onsubmit="return(validate());">
 					
 					<div class="input-form-group mb-3">
   						<div class="input-group-prepend">
     						<span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
- 					 <input type="text" class="form-control" placeholder="Please enter full name" aria-label="Username" aria-describedby="basic-addon1" required="">
+ 					 		<input type="text" class="form-control" name="Fullname" placeholder="Please enter full name" aria-label="Username" aria-describedby="basic-addon1" >
  						</div>
 					</div>
 
 					<div class="input-form-group mb-3">
                        <div class="input-group-prepend">
                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-trash-o"></i></span>
-                           <select class="form-control" id="BinType" name="BinType" required>
+                           <select class="form-control" id="BinType" name="BinType" >
                                <option value="" selected disabled>--Select Bin Type--</option>
                                <option value="Bulk Bin">Gabage Bin</option>
                                <option value="Recycle Bin">Recycle Bin</option>
@@ -85,7 +87,7 @@
 					<div class="input-form-group mb-3">
                          <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-briefcase"></i></span>
-                             <select class="form-control" id="ServiceType" name="ServiceType" required>
+                             <select class="form-control" id="ServiceType" name="ServiceType" >
                                  <option value="" selected disabled>--Select Service Type--</option>
                                  <option value="Bulk Bin">Residential</option>
                                  <option value="Recycle Bin">Commercial</option>
@@ -95,7 +97,7 @@
 					    <div class="input-form-group mb-3">
 					    	<div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon"><i class="fa fa-briefcase"></i></span>
-                                <select class="form-control" id="business" name="business" required>
+                                <select class="form-control" id="business" name="Business" >
                                     <option value="" selected disabled>--Select Commercial Type--</option>
                                     <option value="School">School</option>
                                     <option value="Shop">Shop</option>
@@ -109,7 +111,7 @@
 					    <div class="input-form-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon"><i class="fa fa-map-marker"></i></span>
-                                <select class="form-control" id="location" name="location" required>
+                                <select class="form-control" id="location" name="Location" >
                                     <option value="" selected disabled>--Select Your Location--</option>
                                     <option value="Ashaley Botwe">Ashaley Botwe</option>
                                     <option value="Madina">Madina</option>
@@ -121,18 +123,19 @@
 					<div class="input-form-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon"><span class="fa fa-phone"></span> </span>
-                                <input type="text" class="form-control" id="Contact" name="Contact" placeholder="Enter Contact number" required>
+                                <input type="text" class="form-control" id="Contact" name="Contact" placeholder="Enter Contact number" >
                             </div>
                      </div>
 					<div class="input-form-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon"><span class="fa fa-money"></span> </span>
-                                <input type="text" class="form-control" id="TransId" name="TransId" placeholder="Please Enter Transaction ID" required>
+                                <input type="text" class="form-control" id="TransId" name="TransId" placeholder="Please Enter Transaction ID" >
                             </div>
                     </div>
-					<div class="clearfix">
-                            <button type="submit" class="btn btn-primary pull-right" id="submitForm" name="submitForm"> Submit &nbsp;<span class="fa fa-arrow-right"></span></button>
-                     </div>
+					<!-- <div class="clearfix"> -->
+							<!-- <button type="submit" class="btn btn-primary pull-right" id="submitForm" name="submitForm"> Submit &nbsp;<span class="fa fa-arrow-right"></span></button> -->
+							<input type="submit" value="Submit" />
+                     <!-- </div> -->
 				</form>
 			</a>
 		</div>
@@ -242,8 +245,8 @@
 		<p class="text-center bg-secondary" style="padding-bottom: 10px;">Copyright &copy Smart Dump 2018. All Rights Reserved</p>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
 </body>
 </html>
