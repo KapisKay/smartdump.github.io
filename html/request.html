@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pickup</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="../css/request.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+			<div class="navbar-brand" ><img src="../images/logo.png" height="60em" width="60em">
+			Smart Dump</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+
+			<div class="menu">
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="nav justify-content-end">	
+				<li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#price" class="nav-link">Pricing</a></li>
+			</ul>
+			</div>	
+			</div>	
+		</nav>
+
+			<div class="row">
+			<div class="col-lg-5">
+			<div class="alert-success">
+			<a id="how_to">
+			<div class="how_to">	
+				<img src="../images/logo.png" width="50px;" height="50px;" >
+				<h3>Welcome</h3>
+				<p>Get rid of your trash</p>
+			</div>
+			
+			<div class="process">
+			<ul>
+				<li><p> Check price list <a href="#price" ="price"><i class="fa fa-arrow-down"></i></a> </li>
+				<li>Make payment to: 
+					<ul>
+						<li><em>MTN nunber: 0551234567</em></li>
+						<li><em>Reference: Your Name</em></li>
+					</ul>	
+				</li>
+				<li>
+					<p>Copy <b>transaction ID</b> after payment</p>
+				</li>
+				
+			</ul>
+			</div>
+			</a>
+			</div>
+			</div>
+
+			<div class="col-lg-6">
+			<div class="frm">
+			<a id="make_request">
+				<h3 class="text-center">Request Pickup</h3>
+				<p>Please fill out all sections of this form to send your request</p>
+				<form>
+					
+					<div class="input-form-group mb-3">
+  						<div class="input-group-prepend">
+    						<span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+ 					 <input type="text" class="form-control" placeholder="Please enter full name" aria-label="Username" aria-describedby="basic-addon1" required="">
+ 						</div>
+					</div>
+
+					<div class="input-form-group mb-3">
+                       <div class="input-group-prepend">
+                           <span class="input-group-text" id="basic-addon1"><i class="fa fa-trash-o"></i></span>
+                           <select class="form-control" id="BinType" name="BinType" required>
+                               <option value="" selected disabled>--Select Bin Type--</option>
+                               <option value="Bulk Bin">Gabage Bin</option>
+                               <option value="Recycle Bin">Recycle Bin</option>
+                           </select>
+                        </div>
+                     </div>
+
+					<div class="input-form-group mb-3">
+                         <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-briefcase"></i></span>
+                             <select class="form-control" id="ServiceType" name="ServiceType" required>
+                                 <option value="" selected disabled>--Select Service Type--</option>
+                                 <option value="Bulk Bin">Residential</option>
+                                 <option value="Recycle Bin">Commercial</option>
+                             </select>
+                         </div>
+                     </div>
+					    <div class="input-form-group mb-3">
+					    	<div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon"><i class="fa fa-briefcase"></i></span>
+                                <select class="form-control" id="business" name="business" required>
+                                    <option value="" selected disabled>--Select Commercial Type--</option>
+                                    <option value="School">School</option>
+                                    <option value="Shop">Shop</option>
+                                    <option value="Market">Market</option>
+                                    <option value="Hostel">Hostel</option>
+                                    <option value="Station">Station</option>
+                                    <option value="Office">Office</option>
+                                </select>
+                            </div>
+                        </div>
+					    <div class="input-form-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon"><i class="fa fa-map-marker"></i></span>
+                                <select class="form-control" id="location" name="location" required>
+                                    <option value="" selected disabled>--Select Your Location--</option>
+                                    <option value="Ashaley Botwe">Ashaley Botwe</option>
+                                    <option value="Madina">Madina</option>
+                                    <option value="Arjigano">Arjigano</option>
+                                    <option value="East-Legon">East-Legon</option>
+                                </select>
+                            </div>
+                        </div>
+					<div class="input-form-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon"><span class="fa fa-phone"></span> </span>
+                                <input type="text" class="form-control" id="Contact" name="Contact" placeholder="Enter Contact number" required>
+                            </div>
+                     </div>
+					<div class="input-form-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon"><span class="fa fa-money"></span> </span>
+                                <input type="text" class="form-control" id="TransId" name="TransId" placeholder="Please Enter Transaction ID" required>
+                            </div>
+                    </div>
+					<div class="clearfix">
+                            <button type="submit" class="btn btn-primary pull-right" id="submitForm" name="submitForm"> Submit &nbsp;<span class="fa fa-arrow-right"></span></button>
+                     </div>
+				</form>
+			</a>
+		</div>
+			</div>
+			</div>	
+
+		<div class="pricelist">
+			<a id="price">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="domestic">
+						<h3>Domestic Services</h3>
+						<table class="table table-hover">
+							<thead class="thead-light">
+								<tr>
+									<th>Location</th>
+									<th> Bulk Price</th>
+									<th>Recycle Price</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Ashalley Botwe</td>
+									<td>10</td>
+									<td>8</td>
+								</tr>
+
+								<tr>
+									<td>Madina</td>
+									<td>13</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Arjigano</td>
+									<td>15</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>East-Legon</td>
+									<td>15</td>
+									<td>12</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="commercial">
+					<h3>Commercial Services</h3>
+						<table class="table table-hover">
+							<thead class="thead-light">
+								<tr>
+									<th>Location</th>
+									<th>Bulk Price</th>
+									<th>Recyle Price</th>
+								</tr>
+							</thead>
+						<tbody>
+								<tr>
+									<td>Ashalley Botwe</td>
+									<td>13</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>Madina</td>
+									<td>15</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>Arjigano</td>
+									<td>17</td>
+									<td>15</td>
+								</tr>
+								<tr>
+									<td>East-Legon</td>
+									<td>19</td>
+									<td>15</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			</div>
+			</a>
+		</div>
+
+		
+
+	<div class="footer">
+		<div class="d-flex flex-row-reverse bg-secondary">
+			<div>
+			<p>Mail US:
+				<a href="#"><img src="../images/gmail.png" alt="E-mail" width="50px" height="50px"></a>
+			</p>
+			</div>
+
+			<p>Facebook:
+				<a href="#"><img src="../images/facebook.png" alt="Facebook" width="50px" height="50px"></a>
+			</p>
+
+			<p>Tweet US:
+				<a href="#"><img src="../images/twitter.png" alt="Twitter" width="50px" height="50px"></a>
+			</p>
+		</div>
+		<p class="text-center bg-secondary" style="padding-bottom: 10px;">Copyright &copy Smart Dump 2018. All Rights Reserved</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

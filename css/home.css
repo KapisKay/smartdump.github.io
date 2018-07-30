@@ -1,0 +1,139 @@
+body{
+	font-family: popping;
+}
+.navbar{
+	background-color: white;
+}
+.menu{
+	margin-left: 55%;
+}
+
+.nav-link{
+	color: green;
+}
+.jumbotron{
+	background-image: url(../images/GarbageTrucks.jpg);
+	background-size: cover;
+	color: white;
+	margin: 0;
+}
+.open-remarks{
+	background-color: rgba(225,225,225,0.8);
+}
+.welcome{
+	margin: 13% 5% 5% 5%;
+	font-weight: bold;
+	font-size: 35px; 
+}
+
+.wlcm-details{
+	margin-top: : 5%;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.select-btn {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-bottom: 6%;
+}
+.btn-info{
+ 	background-color: white;
+ 	color: green;
+ 	border-color: green;
+ 	justify-content: center;
+ 	margin: 5px;
+}
+.mini-about{
+	padding: 20px;
+	margin: 5px;
+	font-size: 25px;
+}
+.mini-about h2{
+	padding: 20px;
+	margin: 10px;
+	color: darkgreen;
+}
+#number{
+	font-weight: bold;
+	font-size: 50px;
+	color: green;
+	text-align: center;
+	margin: 0px;
+}
+
+.recycle{
+	padding: 20px;
+	background-color: white;
+	border-bottom: 1px solid rgba(125,125,125,0.3);
+	border-top: 1px solid rgba(125,125,125,0.3);
+
+}
+
+.recycle h2{
+	margin: 0px, 0px, 10px 0px;
+	padding: 20px;
+	color: darkgreen;
+	background-color: white;
+}
+.media-body{
+	font-size: 25px;
+	padding: 10px;
+	margin: 20px 0px 0px 10px;
+}
+.media img{
+	width: 80%;
+	height: 80%;
+}
+.media-body h3{
+	color: darkgreen;
+	margin: 10px;
+	font-size: 40px;
+}
+
+.about{
+	padding: 20px;
+	font-size: 20px;
+}
+.about h2{
+	color: darkgreen;
+	margin: 10px;
+	font-style: 25px;
+}
+.services h2{
+	margin: 20px;
+	padding: 20px;
+}
+
+.card{
+	margin-top: 5px;
+}
+.body{
+	padding: 20px;
+	text-align: center;
+}
+.body h3{
+	margin: 17px;
+	border-bottom: 1px solid green;
+}
+.gallery{
+	height: 100%;
+}
+form{
+	padding: 20px;
+	border: 2px solid green;
+	border-radius: 13px;
+	margin: 5px;
+}
+.call{
+	margin: 5px;
+	padding: 20px;
+	border: 1px solid green;
+}
+.footer{
+	height: 5%;
+	background-color:green;
+	font-size: 50%;
+	color: white;
+}

@@ -1,0 +1,74 @@
+body{
+ font-family: popping;
+}
+.menu{
+	margin-left: 70%;
+}
+
+.nav-link{
+	color: green;
+}
+.alert-success{
+	height: 100%;
+	background-image: url(../images/bincollection.jpg);
+	background-size: cover;
+	margin: 5px;
+}
+.how_to{
+	background-color: white;
+	color: darkgreen;
+	padding: 10px;
+	font-family: avenir;
+	font-size: 15px;
+	text-align: center;
+}
+.fa-arrow-down{
+	color: white;
+}
+.process{
+
+	color: white;
+	padding: 10px;
+	margin: 40px 10px 5px 10px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.5);
+}
+.frm{
+	border: 2px solid darkgreen;
+	margin: 20px 0px 10px 20px;
+	padding: 20px;
+	border-radius: 15px;
+}
+.frm h3{
+	padding: 20px;
+	margin: 5px;
+	color: darkgreen;
+}
+.frm p{
+	padding: 5px;
+	font-size: 20px;
+}
+.pricelist{
+	margin: 20px;
+
+}
+.domestic{
+	border: 2px solid white;
+	padding: 10px;
+}
+.domestic h3{
+	color: darkgreen;
+	font-weight: bold;
+	font-style: italic;
+}
+.commercial{
+	border: 2px solid white;
+	padding: 10px;
+
+}
+.commercial h3{
+	color: darkgreen;
+	font-weight: bold;
+	font-style: italic;
+}

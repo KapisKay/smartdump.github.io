@@ -1,0 +1,60 @@
+body{
+ font-family: popping;
+}
+.menu{
+	margin-left: 70%;
+}
+
+.nav-link{
+	color: green;
+}
+.jumbotron{
+	color: white;
+	font-weight: bold;
+	margin: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+.btn-info{
+ 	background-color: white;
+ 	color: green;
+ 	border-color: green;
+ 	justify-content: center;
+}
+.col-lg-5{
+	background-color: darkgreen;
+}
+#freeb{
+	font-size: 60px;
+	color: white;
+	font-family: avenir;
+	font-style: italic;
+	margin: 200px 10px 10px 20px;
+}
+
+
+.frm{
+	border: 2px solid white;
+	margin: 40px 0px 10px 20px;
+	padding: 20px;
+	border-radius: 15px;
+}
+.frm h3{
+	padding: 20px;
+	margin: 10px;
+	color: darkgreen;
+}
+.frm p{
+	padding: 10px;
+	font-size: 20px;
+}
+.error{
+    color: red;
+    font-size: 100%;
+}
+
+.footer{
+	height: 5%;
+	background-color:green;
+	font-size: 50%;
+	color: white;
+}
