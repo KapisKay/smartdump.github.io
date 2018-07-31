@@ -10,6 +10,14 @@
                  alert( "Please provide your name!" );
                  document.myForm.Name.focus() ;
                  return false;
+              }else{
+                var val = document.myForm.Fullname.value;
+                var matches = val.match(/\d+/g);
+                if (matches != null) {
+                    alert('Please Numbers are not allowed in the Name');
+                }else{
+                    // alert('not number'); 
+                }
               }
               
               if( document.myForm.BinType.value == "-1" )
@@ -41,6 +49,14 @@
                  alert( "Please provide your Contact!" );
                  document.myForm.Name.focus() ;
                  return false;
+              }else{
+                var val = document.myForm.Contact.value;
+                var matches = val.match(/\d+/g);
+                if (matches != null) {
+                    // alert('Please Numbers are not allowed in the Name');
+                }else{
+                    alert('Please Texts are not allowed in your Contact'); 
+                }
               }
 
               if( document.myForm.TransId.value == "" )
@@ -67,4 +83,28 @@
                     return false;
                 }
                 return( true );
+            }
+
+
+            function isNumeric(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+            }
+
+            function disable_commercial_true(){
+                document.getElementById("business").disabled = true;
+            }
+
+            function disable_commercial_false(){
+                document.getElementById("business").disabled = false;
+            }
+
+            function foo(select) {
+                var id_value = select.options[select.selectedIndex].getAttribute("myid");
+                
+                if(id_value == 1){
+                    disable_commercial_true();
+                    
+                }else{
+                    disable_commercial_false();
+                }
             }
