@@ -103,8 +103,12 @@
                 
                 if(id_value == 1){
                     disable_commercial_true();
+                }
+                else if(id_value == -1)
+                {
                     
-                }else{
+                }
+                else{
                     disable_commercial_false();
                 }
             }
